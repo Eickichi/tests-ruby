@@ -24,7 +24,7 @@ end
 =end
 
 def reverse_upcase_noLTA(string)
-   return string.reverse.upcase.delete("L").delete("T").delete("A")
+   return string.reverse.upcase.gsub(/[LTA]/ , '')
 end
 
 def array_42(array)
