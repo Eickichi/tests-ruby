@@ -12,6 +12,7 @@ def who_is_bigger(n1, n2, n3)
   end
 end
 
+=begin
 def reverse_upcase_noLTA(string)
      a = string.upcase
      puts a
@@ -19,6 +20,11 @@ def reverse_upcase_noLTA(string)
      puts b
      c = b.gsub!(/[LTA]/, '')
      return c
+end
+=end
+
+def reverse_upcase_noLTA(string)
+   return string.reverse.upcase.delete("L").delete("T").delete("A")
 end
 
 def array_42(array)
@@ -31,4 +37,8 @@ def array_42(array)
   i = i + 1
   end
   return false
+end
+
+def magic_array(array)
+    return array.flatten.sort.map!{|x| x*2}.delete_if{|x| x%3 == 0}.uniq.sort # map! modifie directement dans l'array
 end
