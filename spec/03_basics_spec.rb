@@ -36,7 +36,6 @@ describe '42 finder' do
   end
 end
 
-=begin
 describe 'crazy stuff on arrays' do
   # The magic_array function takes an array of number or an array of
   # array of number as parameter and return the same array :
@@ -56,5 +55,3 @@ describe 'crazy stuff on arrays' do
       .to eq([2, 4, 14, 16, 64])
   end
 end
-
-=end
